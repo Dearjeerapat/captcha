@@ -28,3 +28,12 @@ function left_operand(pattern,leftOperand){
     return pattern === 1? lo1[leftOperand - 1] : lo2[leftOperand - 1];
   }
 }
+
+function right_operand(pattern,rightOperand){
+  this.to_string = function(){
+    let ro1 = ['0','1','2','3','4','5','6','7','8','9'];
+    let ro2 = ['ZERO','ONE','TWO','THREE','FOUR','FIVE','SIX','SEVEN','EIGHT','NINE'];
+
+    return pattern === 1? ro1[leftOperand - 1] : ro2[leftOperand - 1];
+  }
+}
