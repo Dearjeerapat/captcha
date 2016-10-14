@@ -90,6 +90,11 @@ describe('Captcah App',() =>{
       let App = new createApp(pattern,1,1,0);
 			expect(App.generate()).toEqual('ONE + 0');
 		})
+    it('should return "TWO + 1" when input is 2,1,2,1',()=>{
+      let App = new createApp(pattern,1,2,1);
+			expect(App.generate()).toEqual('TWO + 1');
+		})
+    
   })
 
 })
