@@ -94,7 +94,10 @@ describe('Captcah App',() =>{
       let App = new createApp(pattern,1,2,1);
 			expect(App.generate()).toEqual('TWO + 1');
 		})
-    
+    it('should return "THREE - 2" when input is 2,2,3,2',()=>{
+      let App = new createApp(pattern,2,3,2);
+			expect(App.generate()).toEqual('THREE - 2');
+		})
   })
 
 })
