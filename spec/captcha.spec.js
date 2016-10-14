@@ -84,4 +84,12 @@ describe('Captcah App',() =>{
 		})
 	})
 
+  describe('Pattern is 2', ()=> {
+	   let pattern = 2;
+		it('should return "ONE + 0" when input is 2,1,1,0',()=>{
+      let App = new createApp(pattern,1,1,0);
+			expect(App.generate()).toEqual('ONE + 0');
+		})
+  })
+
 })
