@@ -70,6 +70,10 @@ describe('Captcah App',() =>{
       let App = new createApp(pattern,2,6,7);
 			expect(App.generate()).toEqual('6 - SEVEN');
 		})
+    it('should return "7 * EIGHT" when input is 1,3,7,8',()=>{
+      let App = new createApp(pattern,3,7,8);
+			expect(App.generate()).toEqual('7 * EIGHT');
+		})
 	})
 
 })
