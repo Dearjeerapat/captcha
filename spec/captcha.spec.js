@@ -122,9 +122,11 @@ describe('Captcah App',() =>{
       let App = new createApp(pattern,4,9,8);
 			expect(App.generate()).toEqual('NINE / 8');
 		})
-
-
-
+    it('should return "ZERO + 9" when input is 2,1,0,9',()=>{
+      let App = new createApp(pattern,1,0,9);
+			expect(App.generate()).toEqual('ZERO + 9');
+		})
   })
+  
 
 })
