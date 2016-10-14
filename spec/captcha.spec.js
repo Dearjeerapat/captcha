@@ -25,7 +25,7 @@ function left_operand(pattern,leftOperand){
     let lo1 = ['0','1','2','3','4','5','6','7','8','9'];
     let lo2 = ['ZERO','ONE','TWO','THREE','FOUR','FIVE','SIX','SEVEN','EIGHT','NINE'];
 
-    return pattern === 1? lo1[leftOperand - 1] : lo2[leftOperand - 1];
+    return pattern === 1? lo1[leftOperand] : lo2[leftOperand];
   }
 }
 
@@ -34,6 +34,6 @@ function right_operand(pattern,rightOperand){
     let ro1 = ['0','1','2','3','4','5','6','7','8','9'];
     let ro2 = ['ZERO','ONE','TWO','THREE','FOUR','FIVE','SIX','SEVEN','EIGHT','NINE'];
 
-    return pattern === 1? ro1[leftOperand - 1] : ro2[leftOperand - 1];
+    return pattern === 1? ro1[leftOperand] : ro2[leftOperand];
   }
 }
