@@ -98,6 +98,11 @@ describe('Captcah App',() =>{
       let App = new createApp(pattern,2,3,2);
 			expect(App.generate()).toEqual('THREE - 2');
 		})
+    it('should return "FOUR * 3" when input is 2,3,4,3',()=>{
+      let App = new createApp(pattern,3,4,3);
+			expect(App.generate()).toEqual('FOUR * 3');
+		})
+    
   })
 
 })
