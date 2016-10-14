@@ -11,3 +11,11 @@ function Captcha(pattern,operator,leftOperand,rightOperand) {
     return lo+' '+op+' '+ro;
   }
 }
+
+function Operator(operator){
+  this.to_string = function(){
+    let op = ['+','-','*','/'];
+
+    return op[operator - 1];
+  }
+}
