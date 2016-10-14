@@ -110,6 +110,10 @@ describe('Captcah App',() =>{
       let App = new createApp(pattern,1,6,5);
 			expect(App.generate()).toEqual('SIX + 5');
 		})
+    it('should return "SEVEN - 6" when input is 2,2,7,6',()=>{
+      let App = new createApp(pattern,2,7,6);
+			expect(App.generate()).toEqual('SEVEN - 6');
+		})
 
 
   })
